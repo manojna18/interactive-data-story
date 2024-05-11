@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Story</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Women fall behind in India's workforce race</h1>
+    <p>
+      Data from the International Labour Organization’s (ILO) labour force
+      survey suggests that a majority of Indian women with advanced education
+      levels continue to stay out of the country’s workforce, especially when
+      married or cohabiting. This is in contrast with married men, who show
+      higher participation levels than their unmarried counterparts.
+    </p>
+    <p>
+      This is despite the country making notable progress in the last decade in
+      increasing access to education for its girls. Women’s disproportionate
+      participation in unpaid, domestic labour and conservative social norms
+      contribute to keeping them out of paid labour, according to reports from
+      the ILO.
+    </p>
+    <div class="responsive-svg-container">
+      <div id="filters"></div>
+    </div>
+    <ul class="color-legend">
+      <li class="color-legend-item">
+        Female:
+        <span class="color-legend-item-color1"></span>
+      </li>
+      <li class="color-legend-item">
+        Male:
+        <span class="color-legend-item-color2"></span>
+      </li>
+    </ul>
+    <p>A positive correlation between labour participation of women and their education or skill levels can only be seen in the urban parts of India, according to <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.adb.org/sites/default/files/publication/928471/adbi-statistical-portrait-indian-female-labor-force_0.pdf">a 2023 report</a> by the Asian Development Bank Institute. A majority of Indian women who work are from rural areas and pariticipate largely in agriculture, the report suggests.
+      </p>
+      <p>The gender gap, or the difference in labour participation rates between men and women, is significantly higher in India at 50.9%, the ILO data shows. This is in contrast with countries like Sweden, where the gap is as low as 6.3%.</p>
+    <div class="tableauPlaceholder" id="viz" height:"700px" >
+      <noscript
+        ><a href="#"
+          ><img
+            alt="Global labour force participation of women"
+            src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DashboardProject_17144185105310&#47;Spatialchart&#47;1_rss.png"
+            style="border: none" /></a></noscript
+      ><object class="tableauViz" style="display: none">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param
+          name="name"
+          value="DashboardProject_17144185105310&#47;Spatialchart"
+        />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param
+          name="static_image"
+          value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Da&#47;DashboardProject_17144185105310&#47;Spatialchart&#47;1.png"
+        />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+        <param name="filter" value="publish=yes" />
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementById("viz");
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      vizElement.style.width = "90%";
+      vizElement.style.height = divElement.offsetWidth * 0.30 + "px";
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
